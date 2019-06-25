@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6e7da782a02d0f4c71ea16d8c03b6744",
+    "content-hash": "237facdad250b8d0750dbd7b82906ce9",
     "packages": [
         {
             "name": "apimatic/jsonmapper",
@@ -294,16 +294,16 @@
         },
         {
             "name": "moesif/moesif-symfony1.4",
-            "version": "0.0.1",
+            "version": "0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Moesif/moesif-symfony1.4.git",
-                "reference": "193d53b280525f3d4b3a32eff1670f44bd367f60"
+                "reference": "ce23ebaf7036f1db846594d62d45aefcb3f93315"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Moesif/moesif-symfony1.4/zipball/193d53b280525f3d4b3a32eff1670f44bd367f60",
-                "reference": "193d53b280525f3d4b3a32eff1670f44bd367f60",
+                "url": "https://api.github.com/repos/Moesif/moesif-symfony1.4/zipball/ce23ebaf7036f1db846594d62d45aefcb3f93315",
+                "reference": "ce23ebaf7036f1db846594d62d45aefcb3f93315",
                 "shasum": ""
             },
             "require": {
@@ -343,7 +343,7 @@
                 "middleware",
                 "symfony"
             ],
-            "time": "2019-06-22T01:31:17+00:00"
+            "time": "2019-06-25T23:37:34+00:00"
         },
         {
             "name": "nikic/php-parser",

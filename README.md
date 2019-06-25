@@ -31,7 +31,8 @@ MyCustomFilter:
   class: MyCustomFilter
   param:
     applicationId: Your Moesif Application Id
-    debug: true
+    debug: 'true'
+    logBody: 'true'
 ```
 
 `apps/frontend/config/filters.yml`
@@ -39,10 +40,11 @@ MyCustomFilter:
 ```yaml
 MyCustomFilter:  
   class: MyCustomFilter
-  enabled: true
+  debug: 'true'
   param:
     applicationId: Your Moesif Application Id
-    debug: true
+    debug: 'true'
+    logBody: 'true'
 ```
 
 ## How to disable the filter
@@ -51,10 +53,11 @@ Set the `enabled` param to `false` in `apps/frontend/config/filters.yml` file if
 ```yaml
 MyCustomFilter:  
   class: MyCustomFilter
-  enabled: false
+  enabled: 'false'
   param:
     applicationId: Your Moesif Application Id
-    debug: true
+    debug: 'true'
+    logBody: 'true'
 ```
 
 

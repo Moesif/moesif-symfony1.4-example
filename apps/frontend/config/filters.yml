@@ -10,7 +10,8 @@ MyCustomFilter:
   enabled: true
   param:
     applicationId: Your Moesif Application Id
-    debug: true
+    debug: 'true'
+    logBody: 'true'
 
 cache:     ~
 execution: ~

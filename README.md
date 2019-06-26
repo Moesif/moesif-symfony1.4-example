@@ -2,7 +2,7 @@
 
 Official SDK for PHP Symfony(1.4) to automatically capture incoming HTTP traffic.
 
-Moesif is an API analyatics platform. [moesif-symfony1.4](https://github.com/Moesif/moesif-laravel)
+Moesif is an API analyatics platform. [moesif-symfony1.4](https://github.com/Moesif/moesif-symfony1.4)
 is a middleware that makes integration with Moesif easy for Symfony1.4 based applications.
 
 This is an example of Symfony1.4 application with Moesif integrated.
@@ -31,7 +31,8 @@ MyCustomFilter:
   class: MyCustomFilter
   param:
     applicationId: Your Moesif Application Id
-    debug: true
+    debug: 'true'
+    logBody: 'true'
 ```
 
 `apps/frontend/config/filters.yml`
@@ -39,10 +40,11 @@ MyCustomFilter:
 ```yaml
 MyCustomFilter:  
   class: MyCustomFilter
-  enabled: true
+  debug: 'true'
   param:
     applicationId: Your Moesif Application Id
-    debug: true
+    debug: 'true'
+    logBody: 'true'
 ```
 
 ## How to disable the filter
@@ -51,10 +53,11 @@ Set the `enabled` param to `false` in `apps/frontend/config/filters.yml` file if
 ```yaml
 MyCustomFilter:  
   class: MyCustomFilter
-  enabled: false
+  enabled: 'false'
   param:
     applicationId: Your Moesif Application Id
-    debug: true
+    debug: 'true'
+    logBody: 'true'
 ```
 
 

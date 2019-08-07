@@ -24,14 +24,7 @@ class MyCustomFilter extends MoesifFilter {
     public function identifyUserId($request, $response){
 
         $user = $this->getContext()->getUser();
-        if (!is_null($user)) {
-            $id = $user->getAttribute("id");
-            if (!$this->IsNullOrEmptyString($id)) {
-            return $id ;
-            }
-            return $user->getAttribute("user_id");
-        }
-        return null;
+        return $user->getAttribute("user_id");
     }
 
     /**

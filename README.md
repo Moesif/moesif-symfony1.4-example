@@ -18,6 +18,28 @@ use MoesifFilter;
 
 class MyCustomFilter extends MoesifFilter {
 
+    /**
+     * Get UserId
+     */
+    public function identifyUserId($request, $response){
+
+        $user = $this->getContext()->getUser();
+        if (!is_null($user)) {
+            $id = $user->getAttribute("id");
+            if (!$this->IsNullOrEmptyString($id)) {
+            return $id ;
+            }
+            return $user->getAttribute("user_id");
+        }
+        return null;
+    }
+
+    /**
+     * Get sessionToken
+     */
+    function identifySessionToken($request, $response){
+        return $request->getHttpHeader('Authorization');
+    }
 }
 ```
 
@@ -35,37 +57,17 @@ MyCustomFilter:
     logBody: 'true'
 ```
 
-`apps/frontend/config/filters.yml`
+Your Moesif Application Id can be found in the [_Moesif Portal_](https://www.moesif.com/).
+After signing up for a Moesif account, your Moesif Application Id will be displayed during the onboarding steps. 
 
-```yaml
-MyCustomFilter:  
-  class: MyCustomFilter
-  debug: 'true'
-  param:
-    applicationId: Your Moesif Application Id
-    debug: 'true'
-    logBody: 'true'
-```
-
-## How to disable the filter
-Set the `enabled` param to `false` in `apps/frontend/config/filters.yml` file if you would like to disable capturing API calls.
-
-```yaml
-MyCustomFilter:  
-  class: MyCustomFilter
-  enabled: 'false'
-  param:
-    applicationId: Your Moesif Application Id
-    debug: 'true'
-    logBody: 'true'
-```
-
-
+You can always find your Moesif Application Id at any time by logging 
+into the [_Moesif Portal_](https://www.moesif.com/), click on the top right menu,
+and then clicking _Installation_.
 
 ## How to run this example
 
 1. Install the dependencies `composer update` or `composer install`.
-1. Update the files `config/filters.yml` and `apps/frontend/config/filters.yml` with your Moesif Application Id .
+1. Update the files `config/filters.yml` with your Moesif Application Id .
 2. Change to `web` directory.
 3. Run `php -S localhost:8888` to start the server.
 4. Hit the server with this route - `http://localhost:8888/index.php` and you would see the event is captured in Moesif.

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "237facdad250b8d0750dbd7b82906ce9",
+    "content-hash": "a02b98c3c07db1e80ca34a5f799fe661",
     "packages": [
         {
             "name": "apimatic/jsonmapper",
@@ -294,16 +294,16 @@
         },
         {
             "name": "moesif/moesif-symfony1.4",
-            "version": "0.0.2",
+            "version": "0.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Moesif/moesif-symfony1.4.git",
-                "reference": "ce23ebaf7036f1db846594d62d45aefcb3f93315"
+                "reference": "93ed513996f9197cd2e0a92127e6633ab259ed58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Moesif/moesif-symfony1.4/zipball/ce23ebaf7036f1db846594d62d45aefcb3f93315",
-                "reference": "ce23ebaf7036f1db846594d62d45aefcb3f93315",
+                "url": "https://api.github.com/repos/Moesif/moesif-symfony1.4/zipball/93ed513996f9197cd2e0a92127e6633ab259ed58",
+                "reference": "93ed513996f9197cd2e0a92127e6633ab259ed58",
                 "shasum": ""
             },
             "require": {
@@ -327,9 +327,9 @@
             "authors": [
                 {
                     "name": "keyur@moesif.com",
+                    "role": "Developer",
                     "email": "keyur@moesif.com",
-                    "homepage": "https://www.moesif.com",
-                    "role": "Developer"
+                    "homepage": "https://www.moesif.com"
                 }
             ],
             "description": "Moesif Collection/Data Ingestion Middleware for Symfony1.4",
@@ -343,7 +343,7 @@
                 "middleware",
                 "symfony"
             ],
-            "time": "2019-06-25T23:37:34+00:00"
+            "time": "2019-08-06T23:50:56+00:00"
         },
         {
             "name": "nikic/php-parser",

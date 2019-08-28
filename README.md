@@ -1,11 +1,9 @@
-## Symfony(1.4) Application with Moesif Integrated
+## Symfony(1.4) Example
 
-Official SDK for PHP Symfony(1.4) to automatically capture incoming HTTP traffic.
-
-Moesif is an API analyatics platform. [moesif-symfony1.4](https://github.com/Moesif/moesif-symfony1.4)
+Moesif is an API analyatics and monitoring platform. [moesif-symfony1.4](https://github.com/Moesif/moesif-symfony1.4)
 is a middleware that makes integration with Moesif easy for Symfony1.4 based applications.
 
-This is an example of Symfony1.4 application with Moesif integrated.
+This is an example of an API built on Symfony (1.4) with Moesif integrated.
 
 ## How to enable MoesifFilter
 
